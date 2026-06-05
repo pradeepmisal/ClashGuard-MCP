@@ -1,0 +1,44 @@
+{
+  "mcp_manifest_version": "1.0",
+  "app_model": "A",
+  "mcp_spec_version": "2025-11-25",
+  "server": {
+    "name": "clashguard-mcp",
+    "transport": "stdio"
+  },
+  "tools": [
+    {
+      "name": "extract_revit_data",
+      "description": "Extracts MEP and architectural element geometry, bounding boxes, and spatial data from a Revit model. Supports local demo data and live Autodesk APS Model Derivatives API."
+    },
+    {
+      "name": "analyze_model",
+      "description": "Computes spatial centers and proximity relationships between building elements. Prepares data for clash detection."
+    },
+    {
+      "name": "detect_clashes",
+      "description": "Performs deterministic AABB collision detection between MEP systems and architectural elements. Returns hard and soft clashes with severity scores."
+    },
+    {
+      "name": "suggest_resolutions",
+      "description": "Sends anonymized clash data to Anthropic Claude AI and returns prioritized resolution recommendations. Requires explicit user consent before sending data. No personal data or credentials are transmitted."
+    },
+    {
+      "name": "generate_report",
+      "description": "Generates a MEP clash coordination report in PDF and Word formats. Files are saved locally. No external data transmission."
+    }
+  ],
+  "resources": [],
+  "prompts": [],
+  "external_endpoints": [
+    "https://developer.api.autodesk.com",
+    "https://api.anthropic.com"
+  ],
+  "autodesk_apis_used": [
+    "APS Model Derivatives API",
+    "Autodesk Authentication API (OAuth 2.0 client credentials)"
+  ],
+  "ai_llm_providers": [
+    "anthropic-claude (claude-sonnet-4-6)"
+  ]
+}

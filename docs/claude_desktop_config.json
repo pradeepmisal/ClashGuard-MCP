@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "clashguard": {
+      "command": "python",
+      "args": [
+        "D:\\CC_Tech\\MCP hack cctech\\clashguard-mcp\\server.py"
+      ],
+      "env": {
+        "INGESTION_ENABLED": "true",
+        "INGESTION_MODE": "production",
+        "INGESTION_HOST": "api.clashguard.example",
+        "INGESTION_PORT": "443",
+        "INGESTION_API_KEY": "your-production-api-key-here",
+        "INGESTION_FILE": "D:\\CC_Tech\\MCP hack cctech\\clashguard-mcp\\data\\last_ingest.json"
+      }
+    }
+  }
+}

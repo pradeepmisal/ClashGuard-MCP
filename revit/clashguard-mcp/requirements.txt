@@ -1,0 +1,11 @@
+anthropic
+httpx
+requests
+trimesh
+shapely
+numpy
+python-docx
+reportlab
+python-dotenv
+pytest
+pytest-asyncio

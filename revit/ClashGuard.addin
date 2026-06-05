@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>ClashGuard - Run Check</Name>
+		<Assembly>ClashGuardRevit.dll</Assembly>
+		<AddInId>dc01a33d-e8a9-4cd7-8b7e-4d46cd1e23bb</AddInId>
+		<FullClassName>ClashGuardRevit.ClashGuardCommand</FullClassName>
+		<VendorId>CGMCP</VendorId>
+		<VendorDescription>ClashGuard AI</VendorDescription>
+	</AddIn>
+</RevitAddIns>

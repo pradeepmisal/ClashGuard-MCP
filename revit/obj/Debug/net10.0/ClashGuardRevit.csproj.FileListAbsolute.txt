@@ -1,0 +1,12 @@
+D:\CC_Tech\Hackathon\ClashGuardRevit\bin\Debug\net10.0\ClashGuardRevit.deps.json
+D:\CC_Tech\Hackathon\ClashGuardRevit\bin\Debug\net10.0\ClashGuardRevit.dll
+D:\CC_Tech\Hackathon\ClashGuardRevit\bin\Debug\net10.0\ClashGuardRevit.pdb
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.csproj.AssemblyReference.cache
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.AssemblyInfoInputs.cache
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.AssemblyInfo.cs
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.csproj.CoreCompileInputs.cache
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.dll
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\refint\ClashGuardRevit.dll
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ClashGuardRevit.pdb
+D:\CC_Tech\Hackathon\ClashGuardRevit\obj\Debug\net10.0\ref\ClashGuardRevit.dll

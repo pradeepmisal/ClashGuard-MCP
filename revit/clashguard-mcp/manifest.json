@@ -1,0 +1,52 @@
+{
+  "mcp_manifest_version": "1.0",
+  "app_model": "A",
+  "mcp_spec_version": "2025-11-25",
+  "server": {
+    "name": "clashguard-mcp",
+    "version": "1.0.0",
+    "description": "AI-powered MEP clash detection for Revit using Autodesk APS and Claude AI",
+    "transport": "stdio"
+  },
+  "tools": [
+    {
+      "name": "extract_revit_data",
+      "description": "Extracts MEP element geometry and spatial data from a Revit model using the APS Model Derivatives API. Returns element bounding boxes, types, and floor locations. Does not access personal data or project credentials."
+    },
+    {
+      "name": "analyze_model",
+      "description": "Processes spatial relationships between building elements and computes clearance zones. All calculations are deterministic. No data leaves the local environment."
+    },
+    {
+      "name": "detect_clashes",
+      "description": "Runs deterministic AABB collision detection on building elements. Identifies hard clashes (physical overlap) and soft clashes (clearance violations). No AI involved — rule-based only."
+    },
+    {
+      "name": "suggest_resolutions",
+      "description": "Sends anonymized clash data (element types, locations, severity scores — no personal or credential data) to Anthropic Claude AI for prioritization and engineering resolution suggestions. Requires explicit user consent before each use."
+    },
+    {
+      "name": "generate_report",
+      "description": "Generates a professional PDF and Word clash coordination report from the clash detection results. Report is saved locally. No external data transmission."
+    }
+  ],
+  "resources": [],
+  "prompts": [],
+  "external_endpoints": [
+    "https://developer.api.autodesk.com",
+    "https://api.anthropic.com"
+  ],
+  "autodesk_apis_used": [
+    "APS Model Derivatives API",
+    "Autodesk Authentication API (OAuth 2.0)"
+  ],
+  "ai_llm_providers": [
+    "anthropic-claude (claude-sonnet-4-6)"
+  ],
+  "data_handling": {
+    "personal_data_collected": false,
+    "data_sent_to_ai": "Anonymized clash data only: element types, location identifiers, severity scores, intersection volumes. No personal data, user credentials, or full model data.",
+    "user_consent_required_before_ai": true,
+    "all_connections_https": true
+  }
+}

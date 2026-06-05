@@ -1,0 +1,154 @@
+{
+  "project": "CCTech Demo Building — 3rd Floor South Facade",
+  "description": "Office building in Pune. Architect adding 5 new windows on south facade, Level 3.",
+  "elements": [
+    {
+      "id": "duct-001",
+      "type": "Duct",
+      "name": "HVAC Main Supply Duct SD-301",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 10.0, "y": 8.8, "z": 9.0},
+        "max": {"x": 20.0, "y": 9.2, "z": 9.3}
+      },
+      "properties": {
+        "size": "450x300mm",
+        "system": "HVAC Supply",
+        "material": "GI Sheet"
+      }
+    },
+    {
+      "id": "duct-002",
+      "type": "Duct",
+      "name": "HVAC Return Duct RD-302",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 10.0, "y": 8.5, "z": 8.6},
+        "max": {"x": 20.0, "y": 8.8, "z": 8.9}
+      },
+      "properties": {
+        "size": "300x200mm",
+        "system": "HVAC Return",
+        "material": "GI Sheet"
+      }
+    },
+    {
+      "id": "pipe-001",
+      "type": "Pipe",
+      "name": "Sprinkler Main Pipe SP-301",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 8.0,  "y": 8.95, "z": 9.3},
+        "max": {"x": 22.0, "y": 9.05, "z": 9.4}
+      },
+      "properties": {
+        "diameter": "DN100",
+        "system": "Fire Suppression",
+        "material": "Steel"
+      }
+    },
+    {
+      "id": "conduit-001",
+      "type": "CableTray",
+      "name": "Electrical Cable Tray CT-301",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 9.0,  "y": 8.7, "z": 8.5},
+        "max": {"x": 21.0, "y": 8.9, "z": 8.7}
+      },
+      "properties": {
+        "size": "300x100mm",
+        "system": "Electrical Distribution",
+        "material": "Perforated Steel"
+      }
+    },
+    {
+      "id": "win-new-01",
+      "type": "Window",
+      "name": "New Window W3-01 (Proposed)",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 11.0, "y": 8.6, "z": 8.8},
+        "max": {"x": 12.5, "y": 9.4, "z": 9.5}
+      },
+      "properties": {"type": "Fixed Glazing", "size": "1500x700mm", "status": "Proposed"}
+    },
+    {
+      "id": "win-new-02",
+      "type": "Window",
+      "name": "New Window W3-02 (Proposed)",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 13.5, "y": 8.6, "z": 8.8},
+        "max": {"x": 15.0, "y": 9.4, "z": 9.5}
+      },
+      "properties": {"type": "Fixed Glazing", "size": "1500x700mm", "status": "Proposed"}
+    },
+    {
+      "id": "win-new-03",
+      "type": "Window",
+      "name": "New Window W3-03 (Proposed) — CLASH",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 16.0, "y": 8.7, "z": 9.0},
+        "max": {"x": 17.5, "y": 9.3, "z": 9.4}
+      },
+      "properties": {"type": "Fixed Glazing", "size": "1500x700mm", "status": "Proposed"}
+    },
+    {
+      "id": "win-new-04",
+      "type": "Window",
+      "name": "New Window W3-04 (Proposed)",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 18.5, "y": 8.6, "z": 8.8},
+        "max": {"x": 20.0, "y": 9.4, "z": 9.5}
+      },
+      "properties": {"type": "Fixed Glazing", "size": "1500x700mm", "status": "Proposed"}
+    },
+    {
+      "id": "win-new-05",
+      "type": "Window",
+      "name": "New Window W3-05 (Proposed) — SOFT CLASH",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 10.2, "y": 8.6, "z": 8.7},
+        "max": {"x": 11.7, "y": 9.4, "z": 9.1}
+      },
+      "properties": {"type": "Fixed Glazing", "size": "1500x700mm", "status": "Proposed"}
+    },
+    {
+      "id": "beam-001",
+      "type": "Beam",
+      "name": "Structural Beam SB-301",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 0.0,  "y": 8.85, "z": 9.1},
+        "max": {"x": 25.0, "y": 9.15, "z": 9.5}
+      },
+      "properties": {"size": "UC305x305", "material": "Steel", "load_bearing": true}
+    },
+    {
+      "id": "wall-001",
+      "type": "Wall",
+      "name": "South Facade Wall W-301",
+      "location": "Level 3",
+      "zone": "South Facade",
+      "bbox": {
+        "min": {"x": 8.0,  "y": 9.0,  "z": 8.0},
+        "max": {"x": 22.0, "y": 9.25, "z": 11.0}
+      },
+      "properties": {"thickness": "250mm", "type": "External Facade", "material": "Brick + Insulation"}
+    }
+  ]
+}
