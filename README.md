@@ -389,7 +389,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 ---
 
-## 📞 Support & Contributing
+## 📞 Support 
 
 ### Get Help
 - **Documentation**: See `docs/` folder
@@ -422,14 +422,7 @@ MIT License — See [LICENSE](./LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
 
-Built for the **CCTECH Innovation Hackathon** (June 2026)  
-Presented by **Autodesk** & **Mercer | Mettl**
-
-**Team:** Krushna, Prathmesh, and contributors
-
----
 
 ## 🎯 Roadmap (v2)
 
